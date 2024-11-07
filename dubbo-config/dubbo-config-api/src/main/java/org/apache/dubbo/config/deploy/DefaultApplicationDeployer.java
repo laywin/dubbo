@@ -782,8 +782,8 @@ public class DefaultApplicationDeployer extends AbstractDeployer<ApplicationMode
         // export MetricsService
         exportMetricsService();
 
-        boolean registryConfiged = CollectionUtils.isNotEmpty(moduleModel.getApplicationModel().
-            getApplicationConfigManager().getRegistries());
+        boolean registryConfiged = CollectionUtils.isNotEmpty(
+                moduleModel.getApplicationModel().getApplicationConfigManager().getRegistries());
 
         if (registryConfiged) {
             ApplicationConfig applicationConfig = configManager.getApplicationOrElseThrow();
